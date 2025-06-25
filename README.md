@@ -24,6 +24,20 @@ Limit client requests to a fixed number per minute using IP-based tracking.
 ### 📬 Message Queue
 Simulate a First-In-First-Out (FIFO) task queue with enqueue and dequeue operations.
 
+## 🗃️ Database - SQLite Integration
+This project uses **SQLite** with SQLAlchemy ORM to persist URL data such as original URLs and their corresponding short codes.
+
+### How It Works:
+- When a URL is shortened via the `/shorten` endpoint, the original URL and a randomly generated short code are saved to `linkly.db` using SQLAlchemy.
+- On accessing `/u/<short_code>`, the app looks up the original URL from the SQLite database and redirects the user.
+
+### Schema:
+```python
+class URLMap(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    original_url = db.Column(db.String(2048), nullable=False)
+    short_code = db.Column(db.String(10), unique=True, nullable=False)
+
 ---
 
 ## 📦 Tech Stack

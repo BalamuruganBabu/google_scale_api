@@ -1,7 +1,7 @@
-# google_scale_api
+# linkly
 Simulates URL Shortener, Rate Limiter, and Message Queue using Flask
 
-# Google Scale API Simulation
+# linkly Simulation
 
 This is a backend Flask project that simulates scalable services like:
 
@@ -39,8 +39,8 @@ Simulate a First-In-First-Out (FIFO) task queue with enqueue and dequeue operati
 
 ```bash
 # Clone the repository
-git clone https://github.com/BalamuruganBabu/google_scale_api.git
-cd google_scale_api
+git clone https://github.com/USERNAME/linkly.git
+cd linkly
 
 # Create a virtual environment
 python -m venv venv

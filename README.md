@@ -1,3 +1,4 @@
+[![Render](https://img.shields.io/badge/Deployed%20on-Render-00c7b7?style=for-the-badge&logo=render&logoColor=white)](https://linkly-42wo.onrender.com)
 # linkly
 Simulates URL Shortener, Rate Limiter, and Message Queue using Flask
 
